@@ -1,0 +1,103 @@
+body {
+  background: linear-gradient(to right, #00f2fe, #4facfe);
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin: 20px 0;
+  font-size: 3rem;
+  text-shadow: 2px 2px #000;
+}
+
+#mode-buttons button {
+  padding: 12px 25px;
+  margin: 10px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  background: linear-gradient(to right, #ffffff, #c2f0ff);
+  color: #0072ff;
+  font-weight: bold;
+  transition: 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+#mode-buttons button:hover {
+  background: linear-gradient(to right, #d1eaff, #ffffff);
+  transform: scale(1.05);
+}
+
+#game-board {
+  display: grid;
+  grid-template-columns: repeat(3, 110px);
+  gap: 12px;
+  justify-content: center;
+  margin: 30px auto;
+  padding: 10px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(to top left, #ffffff, #e0f7fa);
+  color: #333;
+  font-size: 2.5rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.cell:hover {
+  background: #ffecb3;
+  transform: scale(1.05);
+}
+
+.cell.X {
+  color: #ff5252;
+  text-shadow: 1px 1px #fff;
+}
+
+.cell.O {
+  color: #536dfe;
+  text-shadow: 1px 1px #fff;
+}
+
+#status {
+  font-size: 1.4rem;
+  margin-top: 15px;
+  padding: 10px;
+  text-shadow: 1px 1px #000;
+}
+
+button#reset {
+  padding: 12px 30px;
+  margin-top: 25px;
+  font-size: 1rem;
+  background: linear-gradient(to right, #ff6e7f, #bfe9ff);
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transition: 0.3s ease;
+}
+
+button#reset:hover {
+  background: linear-gradient(to right, #ff4081, #81d4fa);
+  transform: scale(1.05);
+}

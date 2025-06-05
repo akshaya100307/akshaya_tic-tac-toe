@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Colorful Tic-Tac-Toe</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Tic-Tac-Toe</h1>
+
+  <div id="mode-buttons">
+    <button onclick="setMode('2P')">2 Players</button>
+    <button onclick="setMode('AI')">Play vs AI</button>
+  </div>
+
+  <div id="game-board"></div>
+
+  <div id="status">Choose a mode to start</div>
+
+  <button id="reset" onclick="resetGame()">Restart Game</button>
+
+  <!-- Sound Effects -->
+  <audio id="moveSound" src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_772785e5e2.mp3?filename=click-124467.mp3"></audio>
+  <audio id="winSound" src="https://cdn.pixabay.com/download/audio/2022/03/26/audio_515263bb50.mp3?filename=correct-2-46134.mp3"></audio>
+  <audio id="drawSound" src="https://cdn.pixabay.com/download/audio/2022/03/31/audio_eee8a43b9b.mp3?filename=neutral-2-47369.mp3"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
